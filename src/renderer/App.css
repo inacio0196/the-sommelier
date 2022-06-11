@@ -1,0 +1,78 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+@font-face {
+  font-family: "San Francisco Light";
+  src: local("San Francisco Light"), url("./assets/fonts/SFUIDisplay-Light.ttf") format("truetype");
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: "San Francisco Bold";
+  src: local("San Francisco Bold"), url("./assets/fonts/SFUIDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Dreamy Notes";
+  src: local("Dreamy Notes"), url("./assets/fonts/dreamy-notes-sans.otf") format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  --primary: #36393f;
+  --secondary: #2f3136;
+  --tertiary: rgb(32,34,37);
+  --quaternary: #292b2f;
+  --quinary: #393d42;
+  --senary: #828386;
+
+  --white: #fff;
+  --gray: #8a8c90;
+  --chat-input: rgb(64,68,75);
+  --symbol: #74777a;
+
+  --notification: #f84a4b;
+  --discord: #6e86d6;
+  --mention-detail: #f9a839;
+  --mention-message: #413f3f;
+
+  --link: #5d80d6;
+
+  --rocketseat: #6633cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'San Francisco Light', sans-serif;
+  overflow-y: hidden;
+  background-color: white;
+}
+
+*, button, input {
+  border: 0;
+  outline: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+}
